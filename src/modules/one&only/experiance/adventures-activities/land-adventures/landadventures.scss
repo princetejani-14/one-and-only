@@ -1,0 +1,230 @@
+@import '../../../../../scss/main';
+
+.land_top_part {
+    h1 {
+        @include font-24;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 18px;
+        padding-bottom: 18px;
+    }
+}
+
+.land_adventures_main {
+    display: flex;
+    // position: relative;
+
+    .land_adventures_one {
+        width: 400px;
+        height: 533px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contant {
+            width: 100%;
+            height: 533px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+
+            .mojilo_one {
+                padding: 240px 40px 0 40px;
+
+                p {
+                    @include font-15;
+                }
+
+                h6 {
+                    @include h6;
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    .land_adventures_two {
+        width: 400px;
+        height: 533px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contant_two {
+            width: 100%;
+            height: 533px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+
+            .mojilo_two {
+                padding: 290px 40px 0 40px;
+
+                p {
+                    @include font-15;
+                }
+
+                h6 {
+                    @include h6;
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    .land_adventures_three {
+        width: 400px;
+        height: 533px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contant_three {
+            width: 100%;
+            height: 533px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+
+            .mojilo_three {
+                padding: 260px 40px 0 40px;
+
+                p {
+
+                    @include font-15;
+                }
+
+                h6 {
+                    @include h6;
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    .land_adventures_one:hover .contant {
+        opacity: 1;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        transition: opacity .5s ease;
+        height: 100%;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .land_adventures_two:hover .contant_two {
+        opacity: 1;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        transition: opacity .5s ease;
+        height: 100%;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .land_adventures_three:hover .contant_three {
+        opacity: 1;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        transition: opacity .5s ease;
+        height: 100%;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:768px) {
+    .land_adventures_main{
+        margin: 0 20px 0px 20px;
+        .land_adventures_one{
+            .contant{
+                .mojilo_one{
+                    padding: 0;
+                }
+            }
+        }
+        .land_adventures_two{
+            .contant_two{
+                .mojilo_two{
+                    padding: 0;
+                }
+            }
+        }
+        .land_adventures_three{
+            .contant_three{
+                .mojilo_three{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+@media(max-width:576px) {
+    .land_adventures_main{
+        margin: 0 20px 0px 20px;
+        gap: 10px;
+        .land_adventures_one{
+            width: 120px;
+            height: 250px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .contant{
+                width: 120px;
+                height: 100%;
+                .mojilo_one{
+                    padding: 0;
+                }
+            }
+        }
+        .land_adventures_two{
+            width: 120px;
+            height: 250px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .contant_two{
+                width: 120px;
+                height: 100%;
+                .mojilo_two{
+                    padding: 0;
+                }
+            }
+        }
+        .land_adventures_three{
+            width: 120px;
+            height: 250px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .contant_three{
+                        width: 120px;
+                        height: 100%;
+                .mojilo_three{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

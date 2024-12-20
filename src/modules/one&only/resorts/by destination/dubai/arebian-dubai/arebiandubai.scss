@@ -1,0 +1,166 @@
+@import '../../../../../../scss/main';
+
+.arebian_dubai_main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .arebian_dubai_one {
+        .arebian_dubai_img {
+            width: 416px;
+
+            img {
+                width: 100%;
+                height: 312px;
+                object-fit: cover;
+            }
+        }
+
+        .arebian_dubai_text {
+            padding: 15px 20px 0;
+
+            h1 {
+                @include headingtag;
+                margin-bottom: 10px
+            }
+
+            p {
+                @include ptag;
+                margin-bottom: 35px
+            }
+
+            h6 {
+                @include h6;
+                margin: 5px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .arebian_dubai_two {
+        .arebian_dubai_img_two {
+            width: 416px;
+
+            img {
+                width: 100%;
+                height: 312px;
+                object-fit: cover;
+            }
+        }
+
+        .arebian_dubai_text_two {
+            padding: 15px 20px 0;
+
+            h1 {
+                @include headingtag;
+                margin-bottom: 10px
+            }
+
+            p {
+                @include ptag;
+                margin-bottom: 35px
+            }
+
+            h6 {
+                @include h6;
+                margin: 5px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .arebian_dubai_three {
+        .arebian_dubai_img_three {
+            width: 416px;
+
+            img {
+                width: 100%;
+                height: 312px;
+                object-fit: cover;
+            }
+        }
+
+        .arebian_dubai_text_three {
+            padding: 15px 20px 0;
+
+            h1 {
+                @include headingtag;
+                margin-bottom: 10px
+            }
+
+            p {
+                @include ptag;
+                margin-bottom: 35px
+            }
+
+            h6 {
+                @include h6;
+                margin: 5px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .arebian_dubai_main {
+        .arebian_dubai_one {
+            .arebian_dubai_img {
+                width: 492px;
+                margin-left: 150px;
+
+                img {
+                    width: 100%;
+                    height: 370px;
+                }
+            }
+
+            .arebian_dubai_text {
+                margin-left: 150px;
+            }
+        }
+        .arebian_dubai_two {
+            .arebian_dubai_img_two {
+                width: 492px;
+
+                img {
+                    width: 100%;
+                    height: 370px;
+                }
+            }
+
+            .arebian_dubai_text_two {
+                display: none;
+            }
+        }
+    }
+}
+@media(max-width:576px) {
+    .arebian_dubai_main {
+        .arebian_dubai_one {
+            .arebian_dubai_img {
+                margin: 0 30px;
+                width: 330px;
+                img{
+                    width: 100%;
+                    height: 247px;
+                }
+            }
+
+            .arebian_dubai_text {
+                margin: 0 30px;
+                h1{
+                    letter-spacing: .15625rem;
+                }
+            }
+        }
+
+        .arebian_dubai_two {
+            display: none;
+        }
+
+        .arebian_dubai_three {
+            display: none;
+        }
+    }
+}

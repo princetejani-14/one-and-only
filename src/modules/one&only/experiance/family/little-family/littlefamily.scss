@@ -1,0 +1,133 @@
+@import '../../../../../scss/main';
+.little_family_main{
+    height: 738.48px;
+    margin-bottom: 60px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.little_family_main2 {
+    display: flex;
+    height: 550px;
+    margin-top: 120px;
+
+    .little_family_text_main {
+        width: 720px;
+        height: 500px;
+        background-color: #f7f7f7;
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        .little_family_text {
+            
+            width: 360px;
+            padding: 60px 30px 60px 60px;
+
+            h1 {
+                @include font-24;
+                text-transform: uppercase;
+                margin-bottom: 30px
+            }
+
+            p {
+                @include ptag;
+                letter-spacing: .03125rem;
+                margin-bottom: 20px
+            }
+        }
+    }
+
+    .little_family_img {
+        width: 750px;
+        height: 500px;
+        margin-left: -20%;
+        margin-top: 4%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+}
+@media(max-width:768px){
+    .little_family_main{
+        height: 373px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @media(max-width:768px) {
+        .little_family_main2 {
+            margin: 80px 30px 20px;
+            
+            .little_family_text_main {
+                width: 424px;
+                height: 539px;
+    
+                .little_family_text {
+                    padding: 30px 15px 30px 30px;
+                    width: 220px;
+                }
+            }
+    
+            .little_family_img {
+                width: 442px;
+                height: 390px;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    
+    
+}
+@media(max-width:576px){
+    .little_family_main{
+        height: 260px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .little_family_main2 {
+        flex-direction: column-reverse;
+        margin-top: 90px;
+        margin: 0;
+        .little_family_text_main {
+            height: 412px;
+            width: 390px;
+
+            .little_family_text {
+                padding: 30px 40px;
+                width: 310px;
+
+                h1 {
+                    @include font-21;
+                    letter-spacing: .15625rem;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .little_family_img {
+            margin-left: 0;
+            width: 360px;
+            height: 235px;
+            padding: 0 15px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

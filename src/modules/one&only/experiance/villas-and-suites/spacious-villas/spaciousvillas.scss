@@ -1,0 +1,32 @@
+@import '../../../../../scss/main';
+
+.spacious_villas_main {
+    text-align: center;
+    width: 720px;
+    margin: 0 auto;
+    padding: 45px 0 35px;
+    h1 {
+        @include font-24;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+    p {
+        @include ptag;
+        letter-spacing: .03125rem;
+    }
+}
+@media(max-width:768px){
+    .spacious_villas_main{
+        width: 436px;
+        padding: 25px 0;
+    }
+}
+@media(max-width:576px){
+    .spacious_villas_main{
+        width: 350px;
+        padding: 25px 20px 0 20px;
+        h1{
+            @include font-21;
+        }
+    }
+}

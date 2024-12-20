@@ -1,0 +1,241 @@
+@import '../../../../../scss/main';
+
+.romance_celebration_top{
+    padding: 45px 0 0 0;
+    margin-bottom: 45px;
+    max-width: 1220px;
+    margin: 0 auto;
+    .romance_celebration_main{
+        .romance_celebration_img_one{
+            width: 285px;
+            height: 380px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .romance_celebration_text_one{
+            width: 275px;
+            margin: 10px 10px 0 10px;
+            h1{
+                @include font-18;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            p{
+                @include ptag;
+                margin-bottom: 15px;
+            }
+            h6{
+                @include h6;
+            }
+        }
+    }
+    .romance_celebration_main2{
+        .romance_celebration_img_two{
+            width: 285px;
+            height: 380px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .romance_celebration_text_two{
+            width: 275px;
+            margin: 10px 10px 0 10px;
+            h1{
+                @include font-18;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            p{
+                @include ptag;
+                margin-bottom: 15px;
+            }
+            h6{
+                @include h6;
+            }
+        }
+    }
+    .romance_celebration_main3{
+        .romance_celebration_img_three{
+            width: 285px;
+            height: 380px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .romance_celebration_text_three{
+            width: 275px;
+            margin: 10px 10px 0 10px;
+            h1{
+                @include font-18;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+
+            }
+            p{
+                @include ptag;
+                margin-bottom: 15px;
+            }
+            h6{
+                @include h6;
+            }
+        }
+    }
+    .romance_celebration_main4{
+        .romance_celebration_img_four{
+            width: 285px;
+            height: 380px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .romance_celebration_text_four   {
+            width: 275px;
+            margin: 10px 10px 0 10px;
+            h1{
+                @include font-18;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            p{
+                @include ptag;
+                margin-bottom: 15px;
+            }
+            h6{
+                @include h6;
+            }
+        }
+    }
+}
+.rigtharrow_romance_celebration{
+    position: absolute;
+    top: 27%;
+    right: -7%;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .right_romance_celebration{
+        width: 20px;
+        height: 20px;
+    }
+}
+.leftarrow_romance_celebration{
+    position: absolute;
+    z-index: 99;
+    top: 27%;
+    left: -7%;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .left_romance_celebration{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media(max-width:768px){
+    .romance_celebration_top{
+        padding: 45px 0 0 20px;
+        .romance_celebration_main{
+            .romance_celebration_img_one{
+                width: 329px;
+                height: 444px;
+                margin: 0 auto;
+                padding-left: 38px; 
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .romance_celebration_text_one{
+                width: 275px;
+                margin: 10px 10px 0 10px;
+                padding-left: 38px;
+                h1{
+                    @include font-18;
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+                p{
+                    @include ptag;
+                    margin-bottom: 15px;
+                }
+                h6{
+                    @include h6;
+                }
+            }
+        }
+    }
+    .rigtharrow_romance_celebration{
+        display: none;
+    }
+    .leftarrow_romance_celebration{
+        display: none;
+        
+    }
+}
+
+@media(max-width:576px){
+    .romance_celebration_top{
+        padding: 45px 0 0 30px;
+        .romance_celebration_main{
+            .romance_celebration_img_one{
+                width: 290px;
+                height: 391.5px;
+                margin: 0 auto;
+                padding-left: 38px; 
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .romance_celebration_text_one{
+                width: 275px;
+                margin: 10px 10px 0 10px;
+                padding-left: 55px;
+                h1{
+                    @include font-18;
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+                p{
+                    @include ptag;
+                    margin-bottom: 15px;
+                }
+                h6{
+                    @include h6;
+                }
+            }
+        }
+    }
+    .rigtharrow_romance_celebration{
+        display: none;
+    }
+    .leftarrow_romance_celebration{
+        display: none;
+        
+    }
+}
+

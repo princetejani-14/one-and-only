@@ -1,0 +1,103 @@
+@import '../../../../../scss/main';
+
+.arabian_adventures_main {
+    position: relative;
+
+    .arabian_adventures_img {
+        width: 100%;
+        height: 738px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .arabian_adventures_heading {
+        position: absolute;
+        top: 10%;
+        left: 38%;
+        right: 30%;
+
+        h1 {
+            @include font-24;
+            text-transform: uppercase;
+            color: var(--color-white);
+        }
+
+    }
+
+    .arabian_adventures_data {
+        position: absolute;
+        top: 40%;
+        width: 380px;
+        padding: 100px 120px;
+
+        p {
+            @include font-15;
+            margin-bottom: 20px
+        }
+
+        button {
+            @include btn-white-black;
+            border: white;
+        }
+
+    }
+}
+
+@media(max-width:768px) {
+    .arabian_adventures_main {
+        .arabian_adventures_img {
+            height: 600px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .arabian_adventures_data {
+            padding: 50px;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .arabian_adventures_main {
+        margin-top: 150px;
+
+        .arabian_adventures_img {
+            width: 390px;
+            height: 260px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .arabian_adventures_heading {
+            left: 26%;
+            right: 0;
+            top: -14%;
+
+            h1 {
+                letter-spacing: .3125rem;
+                @include font-21;
+            }
+        }
+        .arabian_adventures_data {
+            position: relative;
+            padding: 20px;
+            width: 350px;
+            p{
+                @include ptag;
+            }
+            button{
+                @include btn-white-black;
+            }
+        }
+    }
+}

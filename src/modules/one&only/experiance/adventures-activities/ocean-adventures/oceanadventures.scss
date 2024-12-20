@@ -1,0 +1,291 @@
+@import '../../../../../scss/main';
+
+.ocean_adventures_main {
+    margin: 60px 0;
+    position: relative;
+
+    .ocean_adventures_top {
+        width: 100%;
+        height: 949px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .ocean_adventures_bottom {
+        display: flex;
+        position: absolute;
+        top: 19%;
+        right: 0;
+        max-width: 1220px;
+        padding: 160px 110px 60px 110px;
+        background-color: var(--color-white);
+
+        .ocean_adventures_bottom_first {
+            max-width: 325px;
+            margin-right: 60px;
+
+            .ocean_adventures_bottom_first_up {
+                border-top: 1px solid black;
+
+            }
+
+            .ocean_adventures_bottom_first_down {
+                text-align: center;
+                padding-top: 135px;
+                border-bottom: 1px solid black;
+                padding-bottom: 135px;
+
+                h1 {
+                    @include font-24;
+                    text-transform: uppercase;
+                    margin-bottom: 18px;
+                }
+
+                .border_bottom {
+                    h1 {
+                        border-bottom: 1px solid black;
+                        width: 115px;
+                    }
+                }
+
+                p {
+                    @include ptag;
+                }
+            }
+        }
+
+        .ocean_bottom_img_flex {
+            display: flex;
+
+            .ocean_adventures_bottom_second {
+                max-width: 246px;
+                padding: 0 15px;
+
+                .ocean_adventures_bottom_second_up {
+                    width: 218px;
+                    height: 288px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .ocean_adventures_bottom_second_down {
+                    padding-left: 20px;
+                    padding-top: 15px;
+
+                    h1 {
+                        @include font-18;
+                        text-transform: uppercase;
+                        padding-bottom: 10px;
+                    }
+
+                    p {
+                        @include ptag;
+                        max-width: 196px;
+                        margin: 0;
+                        margin-bottom: 5px;
+                    }
+
+                    h6 {
+                        @include h6;
+                        margin: 10px 10px 0 0;
+                        padding: 5px 0;
+                    }
+                }
+            }
+
+            .ocean_adventures_bottom_third {
+                max-width: 246px;
+                padding: 0 15px;
+
+                .ocean_adventures_bottom_third_up {
+                    width: 218px;
+                    height: 288px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .ocean_adventures_bottom_third_down {
+                    padding-left: 20px;
+                    padding-top: 15px;
+
+                    h1 {
+                        @include font-18;
+                        text-transform: uppercase;
+                        padding-bottom: 10px;
+                    }
+
+                    p {
+                        @include ptag;
+                        max-width: 196px;
+                        margin: 0;
+                        margin-bottom: 5px;
+                    }
+
+                    h6 {
+                        @include h6;
+                        margin: 10px 10px 0 0;
+                        padding: 5px 0;
+                    }
+                }
+            }
+
+            .ocean_adventures_bottom_four {
+                max-width: 246px;
+                padding: 0 15px;
+
+                .ocean_adventures_bottom_four_up {
+                    width: 218px;
+                    height: 288px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .ocean_adventures_bottom_four_down {
+                    padding-left: 20px;
+                    padding-top: 15px;
+
+                    h1 {
+                        @include font-18;
+                        text-transform: uppercase;
+                        padding-bottom: 10px;
+                        width: 196px;
+                    }
+
+                    p {
+                        @include ptag;
+                        max-width: 196px;
+                        margin: 0;
+                        margin-bottom: 5px;
+                    }
+
+                    h6 {
+                        @include h6;
+                        margin: 10px 10px 0 0;
+                        padding: 5px 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .ocean_adventures_main { 
+        .ocean_adventures_top {
+            display: none;
+        }
+
+        .ocean_adventures_bottom {
+            flex-direction: column;
+            padding: 0;
+            position: relative;
+
+            .ocean_adventures_bottom_first {
+                max-width: 768px;
+                margin: 0;
+
+                .ocean_adventures_bottom_first_down {
+                    padding: 30px 0;
+                    margin: 0 30px;
+
+                    .border_bottom {
+                        h1 {
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .ocean_adventures_main {
+        padding-bottom: 30px;
+        overflow: hidden;
+        .ocean_adventures_top {
+            display: none;
+        }
+
+        .ocean_adventures_bottom {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin-top: 100px;
+
+            .ocean_adventures_bottom_first {
+                max-width: 576px;
+
+                .ocean_adventures_bottom_first_down {
+                    margin: 20px 15px 0;
+                    padding: 30px 22px;
+                    border-bottom: none;
+
+                    h1 {
+                        @include font-21;
+                    }
+                }
+            }
+
+            .ocean_bottom_img_flex {
+                gap: 35px;
+
+                .ocean_adventures_bottom_second {
+                    width: 312px;
+                    height: 634px;
+                    margin-left: 20px;
+
+                    .ocean_adventures_bottom_second_up {
+                        width: 302px;
+                        height: 411px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .ocean_adventures_bottom_second_down {
+                        h1 {
+                            @include font-18;
+                            width: 282px;
+                        }
+                    }
+                }
+
+                .ocean_adventures_bottom_third {
+                    width: 312px;
+                    height: 634px;
+
+                    .ocean_adventures_bottom_third_up {
+                        width: 302px;
+                        height: 411px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

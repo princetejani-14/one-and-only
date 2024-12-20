@@ -1,0 +1,157 @@
+@import '../../../../../scss/main';
+
+.barrel_cuisine_main {
+    margin-top: 180px;
+    position: relative;
+
+    .barrel_cuisine_bg {
+        height: 949px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .barrel_cuisine_main_contant {
+        width: 1320px;
+        height: 579px;
+        background-color: #ffffff;
+        display: flex;
+        padding: 100px 0 60px;
+        position: absolute;
+        top: 22.5%;
+
+        .barrel_cuisine_main_contant_img {
+            max-width: 870px;
+            height: 579px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .barrel_cuisine_main_contant_text_main {
+            max-width: 360px;
+            height: 579px;
+            .barrel_cuisine_main_contant_text {
+                text-align: center;
+                padding: 30px 22.5px;
+                margin: 0 45px;
+                width: 315px;
+
+                h1 {
+                    margin-top: 100px;
+                    @include font-24;
+                    text-transform: uppercase;
+                }
+
+                h2 {
+                    width: 130px;
+                    padding-top: 20px;
+                    border-bottom: 1px solid black;
+                }
+
+                p {
+                    padding: 20px 0 20px 0;
+                    @include ptag;
+                    letter-spacing: .03125rem;
+                }
+
+                h3 {
+                    padding: 20px 0 20px 0;
+                    @include ptag;
+                    letter-spacing: .03125rem;
+                }
+
+                button {
+                    @include btn-white-black;
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px) {
+    .barrel_cuisine_main {
+        
+        margin-top: 60px;
+        padding: 60px 30px;
+        .barrel_cuisine_bg {
+            display: none;
+        }
+        .barrel_cuisine_main_contant {
+            padding: 0;
+            width: 768px;
+            height: 440px;
+            gap: 20px;
+            position: relative;
+            .barrel_cuisine_main_contant_img {
+                width: 370px;
+                height: 440px;
+                img {
+                    width: 100%;
+                    height: 100&;
+                }
+            }
+
+            .barrel_cuisine_main_contant_text_main {
+                height: 400px;
+                max-width: 339px;
+
+                .barrel_cuisine_main_contant_text {
+                    width: 294px;
+                    margin: 0;
+                    padding: 30px 22.5px;
+                    h1{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .barrel_cuisine_main {
+        margin-top: 120px;
+        height: 600px;
+        padding: 0;
+        .barrel_cuisine_bg {
+            display: none;
+        }
+
+        .barrel_cuisine_main_contant {
+            padding: 0 20px;
+            width: 390px;
+            flex-direction: column-reverse;
+            position: relative;
+
+            .barrel_cuisine_main_contant_img {
+                width: 350px;
+                height: 250px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .barrel_cuisine_main_contant_text_main {
+                max-width: 350px;
+                height: 370px;
+
+                .barrel_cuisine_main_contant_text {
+                    padding: 0 20px 0 25px;
+                    margin: 0;
+
+                    h1 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import '../../../../../../scss/main';
+
+.adventure_main {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+
+    h1 {
+        @include font-24;
+        margin-bottom: 18px;
+    }
+    p{
+        max-width: 720px;
+        @include ptag;
+    }
+}
+@media(max-width:768px){
+    .adventure_main{
+        margin-top: 100px;
+        h1{
+            max-width: 436px;
+        }
+        p{
+            max-width: 422px;
+
+        }
+    }
+}
+@media(max-width:576px){
+    .adventure_main{
+        margin-top: 150px;
+        padding: 0 20px;
+        h1{
+            @include font-21;
+            letter-spacing: .15625rem;
+        }
+        p{
+            letter-spacing: .03125rem;
+        }
+    }
+}

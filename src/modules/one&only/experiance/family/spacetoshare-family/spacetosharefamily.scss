@@ -1,0 +1,117 @@
+@import '../../../../../scss/main';
+
+.spacetoshare_family_main {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 550px;
+    margin: 120px 0 80px;
+    position: relative;
+
+    .spacetoshare_family_text_main {
+        width: 720px;
+        height: 500px;
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        .spacetoshare_family_text {
+            width: 360px;
+            position: absolute;
+            right: 4%;
+
+            h1 {
+                @include font-24;
+                text-transform: uppercase;
+                margin-bottom: 17px
+            }
+
+            p {
+                @include ptag;
+                letter-spacing: .03125rem;
+                margin-bottom: 20px
+            }
+
+            button {
+                @include btn-white-black;
+            }
+        }
+    }
+
+    .spacetoshare_family_img {
+        width: 750px;
+        height: 500px;
+        margin-top: 4%;
+        position: absolute;
+        left: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+}
+
+@media(max-width:768px) {
+    .spacetoshare_family_main {
+        padding: 40px 30px 20px;
+        height: 500px;
+        position: relative;
+
+        .spacetoshare_family_text_main {
+            width: 424px;
+            height: 409px;
+
+            .spacetoshare_family_text {
+                width: 202px;
+                position: absolute;
+                right: 10%;
+                top: 8%;
+            }
+        }
+
+        .spacetoshare_family_img {
+            width: 442px;
+            height: 390px;
+            margin-top: 4%;
+            position: absolute;
+            left: 3%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .spacetoshare_family_main {
+        padding: 0 0px;
+        flex-direction: column-reverse;
+        margin: 60px 0px;
+
+        .spacetoshare_family_text_main {
+            padding: 0 15px;
+            position: relative;
+
+            .spacetoshare_family_text {
+                width: 360px;
+                position: relative;
+                right: 0%;
+            }
+        }
+
+        .spacetoshare_family_img {
+            width: 360px;
+            height: 235px;
+            position: relative;
+
+        }
+    }
+}

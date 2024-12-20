@@ -1,0 +1,153 @@
+@import '../../../../../../scss/main';
+
+.event_dubai_main {
+    text-align: center;
+
+    h1 {
+        @include font-24;
+        margin-bottom: 20px;
+    }
+
+    p {
+        @include ptag;
+        max-width: 36.0rem;
+        padding-bottom: 40px;
+    }
+}
+
+.event_dubai_main2 {
+    display: flex;
+    justify-content: space-between;
+
+    .event_dubai_left {
+        .event_dubai_img_left {
+            width: 570px;
+            height: 380px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .event_dubai_text_left {
+            padding: 10px 50px 0 20px;
+
+            h1 {
+                @include headingtag;
+                margin-bottom: 10px;
+                letter-spacing: .15625rem;
+            }
+
+            p {
+                max-width: 450px;
+                margin: 0;
+                @include ptag;
+            }
+
+            h6 {
+                @include h6;
+                margin-top: 10px;
+                padding: 10px;
+            }
+        }
+    }
+
+    .event_dubai_right {
+        .event_dubai_img_right {
+            width: 570px;
+            height: 380px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .event_dubai_text_right {
+            padding: 10px 50px 0 20px;
+
+            h1 {
+                @include headingtag;
+                margin-bottom: 10px;
+                letter-spacing: .15625rem;
+            }
+
+            p {
+                max-width: 450px;
+                margin: 0;
+                @include ptag;
+            }
+
+            h6 {
+                @include h6;
+                margin-top: 10px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .event_dubai_main2 {
+        padding: 0 25px;
+        margin-bottom: 40px;
+        .event_dubai_left {
+            width: 341px;
+            .event_dubai_img_left {
+                width: 341px;
+                height: 227px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .event_dubai_right {
+            width: 341px;
+            .event_dubai_img_right {
+                width: 341px;
+                height: 227px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .event_dubai_main{
+        padding: 0 15px;
+        h1{
+            @include font-21;
+        }
+    }
+    .event_dubai_main2{
+        flex-direction: column;
+        padding: 0 15px;
+        .event_dubai_left{
+            width: 360px;
+            .event_dubai_img_left{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .event_dubai_text_left{
+                padding: 10px 20px 0 10px;
+            }
+        }
+        .event_dubai_right{
+            width: 360px;
+            .event_dubai_img_right{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .event_dubai_text_right{
+                padding: 10px 20px 0 10px;
+            }
+        }
+    }
+}

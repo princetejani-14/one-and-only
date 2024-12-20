@@ -1,0 +1,39 @@
+@import '../../../../../scss/main';
+.sensory_cuisine_main{
+    text-align: center;
+    margin-top: 45px;
+    h1{
+        @include font-24;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+    p{
+        @include ptag;
+        width: 792px;
+        letter-spacing: .03125rem;
+    }
+}
+@media(max-width:768px){
+    .sensory_cuisine_main{
+        padding: 0 20px;
+        h1{
+            width: 480px;
+        }
+        p{
+            width: 480px;
+        }
+    }
+}
+@media(max-width:576px){
+    .sensory_cuisine_main{
+        padding: 0 20px;
+        margin: 0;
+        h1{
+            @include font-21;
+            width: 350px;
+        }
+        p{
+            width: 350px;
+        }
+    }
+}

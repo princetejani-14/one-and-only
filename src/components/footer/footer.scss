@@ -1,0 +1,211 @@
+@import '../../scss/main';
+
+.footer_bg {
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+
+    .footer-container {
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 55px 0 18px 0;
+
+        .footer-grid {
+            display: flex;
+            border-bottom: 0.5px solid #f1f1f1;
+
+            .footer-left {
+                .footer-logo {
+                    width: 226px;
+                    padding: 5px 0;
+                    margin: 0 35px 0 0;
+                    img {
+                        width: 154px;
+                        height: 40px;
+                    }
+                }
+            }
+
+            .footer-right {
+                display: flex;
+
+                .right-menu1 {
+                    display: flex;
+                    padding: 0 0 28px;
+                    flex-direction: column;
+
+
+                    p {
+                        @include font-11;
+                        color: var(--color-white);
+                        text-transform: uppercase;
+                        padding: 0 0 10px;
+                    }
+
+                    a {
+                        font-size: 12px;
+                        color: var(--color-white);
+                        padding: 16px 0 0 0;
+                        width: 199px;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+
+                    .head {
+
+                        justify-content: space-between;
+                        align-items: center;
+
+                        img {
+                            display: none;
+                            height: 12px;
+                            width: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-apps {
+            display: flex;
+            padding: 27px 0 24px;
+            justify-content: space-between;
+            align-items: center;
+
+            .apps-left {
+
+                align-items: center;
+
+                img {
+                    height: 18px;
+                    padding: 0 40px 0 0;
+                    cursor: pointer;
+                }
+            }
+
+            .apps-right {
+                p {
+                    @include font-11;
+                    text-transform: uppercase;
+                    color: #ffffff80;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    .footer_bg {
+        width: 768px;
+        .footer-container {
+            margin: 0 auto;
+            padding: 0px 0px 18px 0px;
+
+            .footer-grid {
+                flex-direction: column;
+
+                .footer-left {
+                    margin: 0 auto;
+                    padding: 50px 0 40px;
+
+                    .footer-logo {
+                        width: 153px;
+                        margin: 0;
+                    }
+                }
+
+                .footer-right {
+                    padding: 0 20px;
+                }
+            }
+
+            .footer-apps {
+                padding: 27px 20px 24px 20px;
+
+                .apps-left {
+                    display: flex;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width:576px) {
+    .footer_bg {
+        .footer-container {
+            .footer-grid {
+                flex-direction: column;
+                border: none;
+
+                .footer-left {
+                    margin: 0 auto;
+                    padding: 50px 0 40px;
+
+                    .footer-logo {
+                        width: 153px;
+                        height: 40px;
+                        margin: 0;
+                    }
+                }
+
+                .footer-right {
+                    padding: 0 35px;
+                    flex-direction: column;
+
+                    .right-menu1 {
+                        padding: 0;
+
+                        p {
+                            padding: 21px 40px 22px 0;
+                            margin: 0 0;
+                        }
+
+                        a {
+                            display: none;
+                        }
+
+                        .head {
+                            border-bottom: 1px solid gray;
+                            display: flex;
+
+                            img {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-apps {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                .apps-left {
+                    text-align: center;
+
+                    img {
+                        padding: 0 20px 0 0;
+                    }
+                }
+
+                .apps-right {
+                    text-align: center;
+
+                    p {
+                        padding-top: 20px;
+                        max-width: 300px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+        }
+    }
+}

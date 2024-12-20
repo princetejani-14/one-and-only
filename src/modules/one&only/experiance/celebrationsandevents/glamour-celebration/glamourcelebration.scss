@@ -1,0 +1,159 @@
+@import '../../../../../scss/main';
+.glamour_celebration_top {
+    margin-bottom: 45px;
+
+    .glamour_celebration_main {
+        .glamour_celebration_img_one {
+            width: 416px;
+            height: 312px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .glamour_celebration_text_one_main {
+            width: 416px;
+
+            .glamour_celebration_text_one {
+                width: 376px;
+                padding: 15px 20px 0;
+
+                h1 {
+                    @include font-18;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    @include ptag;
+                    margin-bottom: 15px;
+                    letter-spacing: .03125rem;
+                }
+
+                h6 {
+                    @include h6;
+                }
+            }
+        }
+    }
+    .glamour_celebration_main2 {
+        .glamour_celebration_img_two {
+            width: 416px;
+            height: 312px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .glamour_celebration_text_two_main {
+            width: 416px;
+
+            .glamour_celebration_text_two {
+                width: 376px;
+                padding: 15px 20px 0;
+
+                h1 {
+                    @include font-18;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    @include ptag;
+                    margin-bottom: 15px;
+                    letter-spacing: .03125rem;
+                }
+
+                h6 {
+                    @include h6;
+                }
+            }
+        }
+    }
+
+    .glamour_celebration_main3 {
+        .glamour_celebration_img_three {
+            width: 416px;
+            height: 312px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .glamour_celebration_text_three_main {
+            width: 416px;
+            .glamour_celebration_text_three {
+                width: 376px;
+                padding: 15px 20px 0;
+                h1 {
+                    @include font-18;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    @include ptag;
+                    margin-bottom: 15px;
+                    letter-spacing: .03125rem;
+                }
+
+                h6 {
+                    @include h6;
+                }
+            }
+        }
+    }
+    .slick-list {
+        padding: 0 0px;
+    }
+
+    .slick-slide {
+        margin: 0 0px;
+    }
+}
+
+.rigtharrow_glamour_celebration {
+    position: absolute;
+    top: 24%;
+    right: -2.5%;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .right_glamour_celebration {
+        width: 20px;
+        height: 20px;
+    }
+}
+.leftarrow_glamour_celebration {
+    position: absolute;
+    z-index: 99;
+    top: 24%;
+    left: -2.5%;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .left_glamour_celebration{
+        width: 20px;
+        height: 20px;
+    }
+}

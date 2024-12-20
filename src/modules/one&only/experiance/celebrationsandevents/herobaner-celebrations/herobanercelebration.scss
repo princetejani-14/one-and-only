@@ -1,0 +1,95 @@
+@import '../../../../../scss/main';
+.herobaner_celebration_main{
+    position: relative;
+    .herobaner_celebration_img{
+        height: 670px;
+        .blure {
+            height: 670px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background: linear-gradient(90deg, rgba(0, 0, 0, .55), transparent 50%);
+            object-fit: cover;
+        }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    }
+    .herobaner_celebration_text{
+        position: absolute;
+        top: 33%;
+        padding: 98.73px;
+        max-width: 440px;
+        h1{
+            @include font-26;
+            margin-bottom: 15px
+        }
+        p{
+            @include font-15;
+        }
+    }
+}
+.herobaner_celebration_main2 {
+    @include hero-under-line;
+    p {
+        @include font-12;
+    }
+}
+@media(max-width:768px){
+    .herobaner_celebration_main{
+        .herobaner_celebration_img{
+            .blure{
+                height: 512px;
+            }
+            height: 512px;
+            img{
+                height: 100%;
+            }
+        }
+        .herobaner_celebration_text{
+            position: relative;
+            padding: 49px;
+            max-width: 100%;
+            h1{
+                color: var(--color-black);
+            }
+            p{
+                @include ptag;
+            }
+        }
+    }
+    .herobaner_celebration_main2{
+        display: none;
+    }
+}
+@media(max-width:576px){
+    .herobaner_celebration_main{
+        .herobaner_celebration_img{
+            .blure{
+                height: 260px;
+            }
+            height: 260px;
+            img{
+                height: 100%;
+            }
+        }
+        .herobaner_celebration_text{
+            position: relative;
+            padding: 25px;
+            max-width: 100%;
+            h1{
+                @include font-24;
+                color: var(--color-black);
+            }
+            p{
+                @include ptag;
+            }
+        }
+    }
+    .herobaner_celebration_main2{
+        display: none;
+    }
+}

@@ -1,0 +1,105 @@
+@import '../../../../../scss/main';
+
+.discover_adventures_main {
+    display: flex;
+    padding: 60px 0px;
+
+    .discover_adventures_left {
+        width: 720px;
+        height: 400px;
+        background-color: #f7f7f7;
+        padding: 80px 0px 0px 60px;
+
+        h1 {
+            width: 360px;
+            margin: 0 0 10px 0;
+            @include font-24;
+            text-transform: uppercase;
+        }
+
+        p {
+            @include ptag;
+            width: 330px;
+            margin: 0 0 20px 0;
+        }
+
+        button {
+            @include btn-white-black;
+        }
+    }
+
+    .discover_adventures_right {
+        width: 750px;
+        height: 500px;
+        margin-left: -25%;
+        margin-top: 4%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .discover_adventures_main {
+        padding: 40px 30px 20px;
+
+        .discover_adventures_left {
+            width: 424px;
+            height: 429px;
+            padding: 90px 0 0 30px;
+
+            h1 {
+                width: 220px;
+            }
+
+            p {
+                width: 220px;
+            }
+
+        }
+
+        .discover_adventures_right {
+            width: 442px;
+            height: 390px;
+            margin-top: 12%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .discover_adventures_main {
+        flex-direction: column-reverse;
+        padding: 0 15px;
+        padding-top: 40px;
+        .discover_adventures_left{
+            height: 361px;
+            background-color: white;
+            padding: 30px 25px 30px 25px;    
+            h1{
+                @include font-21;
+                width: 310px;
+                letter-spacing: .15625rem;
+            }
+            p{
+                width: 310px;
+            }
+        }
+        .discover_adventures_right {
+            margin: 0;
+            width: 360px;
+            height: 235px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

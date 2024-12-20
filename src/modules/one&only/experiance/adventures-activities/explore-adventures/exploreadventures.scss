@@ -1,0 +1,35 @@
+@import '../../../../../scss/main';
+
+.explore_adventures_main {
+    text-align: center;
+    margin-top: 45px;
+    h1 {
+        @include font-24;
+        text-transform: uppercase;
+        margin-bottom: 18px
+    }
+    p{
+        @include ptag;
+        max-width: 680px;
+        margin-bottom: 90px;
+    }
+}
+@media(max-width:768px){
+    .explore_adventures_main{
+        p{
+        max-width: 436px;
+        }
+    }
+}
+@media(max-width:576px){
+    .explore_adventures_main{
+        padding: 0 20px;
+        h1{
+            @include font-21;
+            letter-spacing: .15625rem;
+        }
+        p{
+            max-width: 325px;
+        }
+    }
+}

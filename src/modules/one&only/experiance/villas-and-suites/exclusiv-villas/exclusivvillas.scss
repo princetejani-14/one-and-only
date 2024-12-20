@@ -1,0 +1,93 @@
+@import '../../../../../scss/main';
+.exclusiv_villas_main{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 120px;
+    .exclusiv_villas_left{
+        width: 900px;
+        height: 510px;
+        background-color: #f7f7f7;
+        .exclusiv_villas_left_text{
+            width: 510px;
+            padding: 60px 0px 60px 60px;
+            h1{
+                @include font-24;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            p{
+                width: 480px;
+                margin: 0;
+                @include ptag;
+            }
+        }
+    }
+    .exclusiv_villas_right{
+        margin-left: -27%;
+        margin-top: -5%;
+        width: 510px;
+        height: 510px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media(max-width:768px){
+    .exclusiv_villas_main{
+        margin-top: 80px;
+        padding: 0 30px;
+        .exclusiv_villas_left{
+            width: 531px;
+            .exclusiv_villas_left_text{
+                width: 264px;
+                padding: 60px 30px 60px 60px;
+                p{
+                    width: 264px;
+                }
+
+            }
+        }
+        .exclusiv_villas_right{
+            width: 309px;
+            height: 309px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .exclusiv_villas_main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        padding: 0;
+        .exclusiv_villas_left{
+            width: 390px;
+            height: 330px;
+            .exclusiv_villas_left_text{
+                width: 340px;
+                padding: 25px;
+                h1{
+                    @include font-21;
+                }
+                p{
+                    width: 340px;
+                }
+            }
+        }
+        .exclusiv_villas_right{
+            margin-left: 0%;
+            padding: 0 20px;
+            margin-top: 0%;
+            width: 350px;
+            height: 350px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

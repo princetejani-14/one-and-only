@@ -1,0 +1,168 @@
+@import '../../../../scss//main';
+
+.destination-main {
+    margin: 30px 0 60px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 621px;
+    }
+}
+
+.destination-main-second {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+
+    .destination-our-resorts {
+        .des-ou-resort-img {
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 380px;
+            }
+        }
+
+        .des-ou-resort-text-left {
+            padding: 10px 50px 0 20px;
+
+            h1 {
+                @include headingtag;
+                margin-bottom: 10px
+            }
+
+            p {
+                @include ptag;
+                padding-bottom: 10px
+            }
+
+            h6 {
+                @include h6;
+                padding: 5px 0;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .destination-our-private-home {
+        .des-ou-resort-img-two {
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 380px;
+            }
+        }
+
+        .des-ou-resort-text-rigth {
+            padding: 10px 78px 0 20px;
+
+            h1 {
+                @include headingtag;
+                margin-bottom: 10px
+            }
+
+            p {
+                @include ptag;
+                padding-bottom: 10px
+            }
+
+            h6 {
+                @include h6;
+                padding: 5px 0;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+@media(max-width:768px) {
+    .destination-main {
+        width: 690px;
+        height: 314px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+    .destination-main-second {
+        margin-top: 60px;
+        margin-left: 25px;
+        margin-right: 25px;
+        gap: 30px;
+
+        .destination-our-resorts {
+            .des-ou-resort-img {
+                width: 341px;
+                height: 277px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .destination-our-private-home{
+            .des-ou-resort-img-two{
+                width: 341px;
+                height: 277px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
+            .des-ou-resort-text-rigth{
+                padding-right: 50px;
+            }
+        }
+
+    }
+}
+@media(max-width:576px){
+    .destination-main{
+        width: 350px;
+        height: 232px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .destination-main-second{
+        padding-top: 80px;
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 15px;
+        .destination-our-resorts{
+            .des-ou-resort-img{
+                height: 240px;
+                width: 360px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .des-ou-resort-text-left{
+                    padding: 10px 20px 0 10px;
+            }
+        }
+        .destination-our-private-home{
+            .des-ou-resort-img-two{
+                height: 240px;
+                width: 360px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .des-ou-resort-text-rigth{
+                padding: 10px 20px 0 10px;
+            }
+        }
+    }
+}

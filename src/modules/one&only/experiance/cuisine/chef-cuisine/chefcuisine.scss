@@ -1,0 +1,219 @@
+@import '../../../../../scss/main';
+.chef_cuisine_main{
+    text-align: center;
+    h1{
+        @include font-24;
+        max-width: 500px;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+}
+.chef_cuisine_main2{
+    display: flex;
+    margin-top: 20px;
+    .chef_cuisine_one{
+        padding: 0 10px;
+        .chef_cuisine_img_one{
+            width: 285px;
+            height: 380px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .chef_cuisine_text_one{
+            padding: 10px 10px 0 0;
+            height: 349px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                @include font-18;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            p{
+                @include ptag;
+                margin-bottom: 15px;
+                letter-spacing: .03125rem;
+            }
+            h6{
+                @include h6;
+            }
+
+        }
+    }
+    .chef_cuisine_two{
+        padding: 0 10px;
+        .chef_cuisine_img_two{
+            width: 285px;
+            height: 380px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .chef_cuisine_text_two{
+            padding: 10px 10px 0 0;
+            height: 349px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                @include font-18;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            p{
+                @include ptag;
+                margin-bottom: 15px;
+                letter-spacing: .03125rem;
+            }
+            h6{
+                @include h6;
+            }
+
+        }
+    }
+    .chef_cuisine_three{
+        padding: 0 10px;
+        .chef_cuisine_img_three{
+            width: 285px;
+            height: 380px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .chef_cuisine_text_three{
+            padding: 10px 10px 0 0;
+            height: 349px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                @include font-18;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            p{
+                @include ptag;
+                margin-bottom: 15px;
+                letter-spacing: .03125rem;
+            }
+            h6{
+                @include h6;
+            }
+
+        }
+    }
+    .chef_cuisine_four{
+        padding: 0 10px;
+        .chef_cuisine_img_four{
+            width: 285px;
+            height: 380px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .chef_cuisine_text_four{
+            padding: 10px 10px 0 0;
+            height: 349px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                @include font-18;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            p{
+                @include ptag;
+                margin-bottom: 15px;
+                letter-spacing: .03125rem;
+            }
+            h6{
+                @include h6;
+            }
+
+        }
+    }
+}
+@media(max-width:768px){
+    .chef_cuisine_main2{
+        overflow: hidden;
+        .chef_cuisine_one{
+            .chef_cuisine_img_one{
+                width: 329px;
+                height: 444px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .chef_cuisine_two{
+            .chef_cuisine_img_two{
+                width: 329px;
+                height: 444px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .chef_cuisine_text_two{
+                opacity: 0;
+            }
+        }
+        .chef_cuisine_three{
+            .chef_cuisine_img_three{
+                width: 329px;
+                height: 444px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .chef_cuisine_text_three{
+                opacity: 0;
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .chef_cuisine_main{
+        margin-top: 30px;
+        padding: 0 20px;
+        h1{
+            letter-spacing: .15625rem;
+        }
+    }
+    .chef_cuisine_main2{
+        margin-left: 40px;
+        .chef_cuisine_one{
+            .chef_cuisine_img_one{
+                width: 290px;
+                height: 391px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .chef_cuisine_two{
+            .chef_cuisine_img_two{
+                width: 290px;
+                height: 391px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
